@@ -1,0 +1,360 @@
+Setting CUDA device
+Setting CUDA device to 0
+QDP m0,n0@circe-n093 info:  trying to get device 0
+QDP m0,n0@circe-n093 info:  trying to grab pre-existing context
+QDP m0,n0@circe-n093 info:  trying to create a context
+Initializing QMP part
+Initialize done
+Initializing QUDA device (using CUDA device no. 0)
+QUDA 0.9.1 (git PERFLAB_MILC_201903-598-g256c634-sm_70)
+CUDA Driver version = 10010
+CUDA Runtime version = 10010
+Found device 0: Tesla V100-SXM3-32GB-H
+Found device 1: Tesla V100-SXM3-32GB-H
+Found device 2: Tesla V100-SXM3-32GB-H
+Found device 3: Tesla V100-SXM3-32GB-H
+Found device 4: Tesla V100-SXM3-32GB-H
+Found device 5: Tesla V100-SXM3-32GB-H
+Found device 6: Tesla V100-SXM3-32GB-H
+Found device 7: Tesla V100-SXM3-32GB-H
+Found device 8: Tesla V100-SXM3-32GB-H
+Found device 9: Tesla V100-SXM3-32GB-H
+Found device 10: Tesla V100-SXM3-32GB-H
+Found device 11: Tesla V100-SXM3-32GB-H
+Found device 12: Tesla V100-SXM3-32GB-H
+Found device 13: Tesla V100-SXM3-32GB-H
+Found device 14: Tesla V100-SXM3-32GB-H
+Found device 15: Tesla V100-SXM3-32GB-H
+Using device 0: Tesla V100-SXM3-32GB-H
+WARNING: Data reordering done on GPU (set with QUDA_REORDER_LOCATION=GPU/CPU)
+Initializing QDP-JIT GPUs
+QDP m0,n16@circe-n093 info:  Getting GPU device properties
+QDP m0,n16@circe-n093 info:  Compute capability (major)              = 7
+QDP m0,n16@circe-n093 info:  Compute capability (minor)              = 0
+QDP m0,n16@circe-n093 info:  Divide with IEEE 754 compliant rounding = 1
+QDP m0,n16@circe-n093 info:  Sqrt with IEEE 754 compliant rounding   = 1
+QDP m0,n16@circe-n093 info:  unified addr                            = 1
+QDP m0,n16@circe-n093 info:  asyncTransfers                          = 1
+QDP m0,n16@circe-n093 info:  smem                                    = 49152
+QDP m0,n16@circe-n093 info:  max_gridx                               = 1073741824
+QDP m0,n16@circe-n093 info:  max_gridy                               = 32768
+QDP m0,n16@circe-n093 info:  max_gridz                               = 32768
+QDP m0,n16@circe-n093 info:  max_blockx                              = 1024
+QDP m0,n16@circe-n093 info:  max_blocky                              = 1024
+QDP m0,n16@circe-n093 info:  max_blockz                              = 64
+QDP m0,n16@circe-n093 info:  SM count                                = 80
+QDP m0,n16@circe-n093 info:  GPU memory: free = 33368178688 (31822.375000 MB),  total = 34058272768 (32480.500000 MB)
+QDP m0,n16@circe-n093 info:  Using device memory pool size: 28640 MB
+QDP m0,n16@circe-n093 info:  Trigger GPU evaluation
+LLVM optimization level : 3
+NVPTX Flush to zero     : 0
+Initializing QUDA memory
+Disabling GPU-Direct RDMA access
+Enabling peer-to-peer copy engine and direct load/store access
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 1 (gpu=1) dir=0, dim=0, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 2 (gpu=2) dir=0, dim=1, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 4 (gpu=4) dir=0, dim=2, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 1 (gpu=1) dir=1, dim=0, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 2 (gpu=2) dir=1, dim=1, performance rank = (0, 0)
+Peer-to-peer enabled for rank 0 (gpu=0) with neighbor 4 (gpu=4) dir=1, dim=2, performance rank = (0, 0)
+WARNING: Using device memory pool allocator
+WARNING: Using pinned memory pool allocator
+WARNING: Environment variable QUDA_RESOURCE_PATH is not set.
+WARNING: Caching of tuned parameters will be disabled.
+Linkage = bool Chroma::MapObjectDiskEnv::registerAll(): registering map obj key colorvec
+0
+Monomials xml is:
+<Monomials>
+<elem>
+<Name>TWO_FLAVOR_EOPREC_CONSTDET_FERM_MONOMIAL</Name>
+
+<InvertParam>
+<invType>QUDA_CLOVER_INVERTER</invType>
+
+<CloverParams>
+<Mass>0.06477197058</Mass>
+
+<clovCoeffR>0.8648334911</clovCoeffR>
+
+<clovCoeffT>0.5271531811</clovCoeffT>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>6.012497031</xi_0>
+
+<nu>0.8055935787</nu>
+</AnisoParam>
+</CloverParams>
+
+<AntiPeriodicT>true</AntiPeriodicT>
+
+<RsdTarget>1e-07</RsdTarget>
+
+<Delta>0.1</Delta>
+
+<MaxIter>2000</MaxIter>
+
+<SilentFail>true</SilentFail>
+
+<SolverType>BICGSTAB</SolverType>
+
+<Verbose>true</Verbose>
+
+<AsymmetricLinop>true</AsymmetricLinop>
+
+<CudaReconstruct>RECONS_12</CudaReconstruct>
+
+<CudaSloppyPrecision>HALF</CudaSloppyPrecision>
+
+<CudaSloppyReconstruct>RECONS_12</CudaSloppyReconstruct>
+
+<AxialGaugeFix>false</AxialGaugeFix>
+
+<AutotuneDslash>true</AutotuneDslash>
+</InvertParam>
+
+<FermionAction>
+<FermAct>CLOVER</FermAct>
+
+<Mass>0.06477197058</Mass>
+
+<clovCoeffR>0.8648334911</clovCoeffR>
+
+<clovCoeffT>0.5271531811</clovCoeffT>
+
+<FermState>
+<Name>STOUT_FERM_STATE</Name>
+
+<rho>0.14</rho>
+
+<n_smear>2</n_smear>
+
+<orthog_dir>3</orthog_dir>
+
+<FermionBC>
+<FermBC>SIMPLE_FERMBC</FermBC>
+
+<boundary>1 1 1 -1</boundary>
+</FermionBC>
+</FermState>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>6.012497031</xi_0>
+
+<nu>0.8055935787</nu>
+</AnisoParam>
+</FermionAction>
+
+<ChronologicalPredictor>
+<Name>LAST_SOLUTION_4D_PREDICTOR</Name>
+</ChronologicalPredictor>
+
+<NamedObject>
+<monomial_id>monomial_1</monomial_id>
+</NamedObject>
+</elem>
+
+<elem>
+<Name>GAUGE_MONOMIAL</Name>
+
+<GaugeAction>
+<Name>ANISO_SPECTRUM_GAUGEACT</Name>
+
+<beta>2.8</beta>
+
+<u_s>0.8275375628</u_s>
+
+<u_t>1</u_t>
+
+<omega>0</omega>
+
+<GaugeBC>
+<Name>PERIODIC_GAUGEBC</Name>
+</GaugeBC>
+
+<AnisoParam>
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_0>4.843629</xi_0>
+</AnisoParam>
+</GaugeAction>
+
+<NamedObject>
+<monomial_id>monomial_2</monomial_id>
+</NamedObject>
+</elem>
+</Monomials>
+
+HMC_xml is: 
+<Hamiltonian>
+<monomial_ids>
+<elem>monomial_1</elem>
+
+<elem>monomial_2</elem>
+</monomial_ids>
+</Hamiltonian>
+Integrator XML is: 
+<MDIntegrator>
+<tau0>0.5</tau0>
+
+<anisoP>true</anisoP>
+
+<t_dir>3</t_dir>
+
+<xi_mom>3</xi_mom>
+
+<Integrator>
+<Name>LCM_STS_LEAPFROG</Name>
+
+<n_steps>40</n_steps>
+
+<monomial_ids>
+<elem>monomial_1</elem>
+</monomial_ids>
+
+<SubIntegrator>
+<Name>LCM_STS_LEAPFROG</Name>
+
+<n_steps>5</n_steps>
+
+<monomial_ids>
+<elem>monomial_2</elem>
+</monomial_ids>
+</SubIntegrator>
+</Integrator>
+</MDIntegrator>
+
+Setting serial write mode for saving configurations
+InlineMeasurements are: 
+<InlineMeasurements/>
+
+Call QDP create layout
+Lattice initialized:
+  problem size = 64 64 64 128
+  layout size = 32 64 64 128
+  logical machine size = 2 2 2 2
+  subgrid size = 32 32 32 64
+  total number of nodes = 16
+  total volume = 33554432
+  subgrid volume = 2097152
+Finished init of RNG
+Finished lattice layout
+Finished with QDP create layout
+Initialize gauge field
+Gauge initialization: cfg_type = WEAK_FIELD
+Starting up a weak field config
+Gauge field successfully initialized: time= 0.742363 secs
+Gauge field reunitarization found 0 unitarity violations
+Gauge field reunitarized: time=0.845354 secs
+TwoFlavorWilsonTypeFermMonomialParams: read 
+CLOVER
+EvanOddPrecConstDetTwoFlavorWilsonTypeFermMonomial: construct CLOVER
+u0 is 1
+Read Monomial with monomial id: monomial_1
+Create monomial: GAUGE_MONOMIAL
+GaugeMonomialParams: read 
+<GaugeAction>
+      <Name>ANISO_SPECTRUM_GAUGEACT</Name>
+      <beta>2.8</beta>
+      <u_s>0.8275375628</u_s>
+      <u_t>1</u_t>
+      <omega>0</omega>
+      <GaugeBC>
+        <Name>PERIODIC_GAUGEBC</Name>
+      </GaugeBC>
+      <AnisoParam>
+        <anisoP>true</anisoP>
+        <t_dir>3</t_dir>
+        <xi_0>4.843629</xi_0>
+      </AnisoParam>
+    </GaugeAction>
+
+GaugeBC Callback: Creating PeriodicGaugeBC 
+aniso.t_dir3
+Read Monomial with monomial id: monomial_2
+ExactHamiltonian::create(): Trying to bind monomial with ID monomial_1
+ExactHamiltonian::create(): Trying to bind monomial with ID monomial_2
+Subintegrator XML is: 
+<SubIntegrator>
+      <Name>LCM_STS_LEAPFROG</Name>
+      <n_steps>5</n_steps>
+      <monomial_ids>
+        <elem>monomial_2</elem>
+      </monomial_ids>
+    </SubIntegrator>
+
+Binding Monomials
+There are 1 IDs to bind 
+Monomial with ID = monomial_2 bound
+All monomials successfully bound
+Binding Monomials
+There are 1 IDs to bind 
+Monomial with ID = monomial_1 bound
+All monomials successfully bound
+Setting dir 3 to aniso factor 0.333333333333333 originally 9
+<InlineMeasurements/>
+
+There are 0 user measurements 
+Setting Force monitoring to 1
+MC Control: About to do 5 updates
+Doing Update: 1 warm_up_p = 0
+Doing Reversibility Test this traj
+Before HMC trajectory call
+HMC_TIME: Momentum Refresh Time: 0.88868 
+TwoFlavWilson4DMonomial: resetting Predictor after field refresh
+CLOV_LINOP: Time spent in clov deriv (total) = 0
+CLOV_LINOP: Time spent in clov apply/invapply (total) = 0.13495
+HMC_TIME: Pseudofermion Refres Time: 36.219981 
+u0 is 1
+tuneDslasP = 1
+MdagMSysSolverQUDAClover:
+Working with Asymmetric LinOp
+Enabling Dslash Autotuning
+Setting Precondition stuff to defaults for not using
+Creating CloverTerm
+Inverting CloverTerm
+Creating new clover field
+Tuned block=(128,1,1), grid=(8192,2,1), shared_bytes=5462, aux=(1,1,1,1) giving 0.00 Gflop/s, 871.18 GB/s for N4quda10CopyCloverIddLi72ENS_6clover11FloatNOrderIdLi72ELi2ELb0EEENS1_11QDPJITOrderIdLi72EEEEE with out_stride=1048576,in_stride=1048576
+Tuned block=(64,1,1), grid=(16384,2,1), shared_bytes=0, aux=(1,1,1,1) giving 0.00 Gflop/s, 903.06 GB/s for N4quda10CopyCloverIsdLi72ENS_6clover11FloatNOrderIsLi72ELi4ELb0EEENS2_IdLi72ELi2ELb0EEEEE with out_stride=1048576,in_stride=1048576
+TwoFlavWilson4DMonomial: resetting Predictor before energy calc solve
+Two Step Solve
+Null Predictor Predict Y: Leaving guess unchanged
+Tuned block=(512,1,1), grid=(2048,1,1), shared_bytes=0, aux=(1,1,1,1) giving 0.00 Gflop/s, 899.61 GB/s for N4quda15CopyColorSpinorIddLi4ELi3ENS_18CopyColorSpinorArgINS_11colorspinor11FloatNOrderIdLi4ELi3ELi2ELb0ELb0EEENS2_16QDPJITDiracOrderIdLi4ELi3EEEEEEE with out_stride=1048576,in_stride=1048576,NonRelBasis
+Tuned block=(1024,1,1), grid=(156,1,1), shared_bytes=0, aux=(1,1,1,1) giving 250.07 Gflop/s, 1000.28 GB/s for N4quda4blas5Norm2Id7double2S2_EE with vol=1048576,stride=1048576,precision=8,Ns=4,Nc=3
+WARNING: Device reductions on non-native fields is not supported
+
+Source: CPU = 0, CUDA copy = 5.42276e+08
+WARNING: Device reductions on non-native fields is not supported
+
+Solution: CPU = 0, CUDA copy = 0
+Prepared source = 5.42276e+08
+Prepared solution = 0
+Prepared source post mass rescale = 5.42276e+08
+Creating a BiCGstab solver
+Tuned block=(352,1,1), grid=(153,1,1), shared_bytes=0, aux=(1,1,1,1) giving 17.04 Gflop/s, 409.06 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=1048576,stride=1048576,precision=8,Ns=4,Nc=3,comm=1111,topo=2222,dagger,nFace=1,device-device
+Tuned block=(160,1,1), grid=(6554,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 727.52 Gflop/s, 1138.30 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=interior,comm=1111,commDim=1111,dagger
+Tuned block=(128,1,1), grid=(256,1,1), shared_bytes=7022, aux=(1,1,1,1) giving 515.39 Gflop/s, 868.03 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=8193, aux=(1,1,1,1) giving 550.12 Gflop/s, 926.52 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=9831, aux=(1,1,1,1) giving 502.92 Gflop/s, 847.02 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 102.02 Gflop/s, 171.82 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger
+Tuned block=(128,1,1), grid=(1792,1,1), shared_bytes=32769, aux=(1,1,1,1) giving 238.31 Gflop/s, 401.37 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,dagger
+Tuned block=(64,1,1), grid=(12,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 1.47 Gflop/s, 35.25 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=1048576,stride=1048576,precision=8,Ns=4,Nc=3,comm=1111,topo=2222,dagger,kernelPackT,nFace=1,host-host
+Tuned block=(32,1,1), grid=(1024,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 78.76 Gflop/s, 132.65 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 81.20 Gflop/s, 136.76 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(16,1,1), grid=(4096,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 80.28 Gflop/s, 135.20 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 77.82 Gflop/s, 131.07 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(192,1,1), grid=(1195,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 75.66 Gflop/s, 127.43 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_all,commDim=1111,dagger,zero_copy,p2p=0
+Tuned block=(64,1,1), grid=(12,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 2.93 Gflop/s, 70.32 GB/s for N4quda4PackIdLi3ELb1EEE with policy_kernel,vol=1048576,stride=1048576,precision=8,Ns=4,Nc=3,comm=1111,topo=2222,dagger,kernelPackT,nFace=1,host-device
+Tuned block=(32,1,1), grid=(1024,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 79.01 Gflop/s, 133.07 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_t,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=8193, aux=(1,1,1,1) giving 549.99 Gflop/s, 926.30 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_z,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(80,1,1), grid=(820,1,1), shared_bytes=0, aux=(1,1,1,1) giving 501.82 Gflop/s, 845.17 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_y,commDim=1111,dagger,zero_copy,p2p=1
+Tuned block=(32,1,1), grid=(2048,1,1), shared_bytes=49153, aux=(1,1,1,1) giving 102.23 Gflop/s, 172.17 GB/s for N4quda26WilsonCloverPreconditionedIdLi4ELi3ENS_15WilsonCloverArgIdLi3EL21QudaReconstructType_s12ELb0EEEEE with policy_kernel=exterior_x,commDim=1111,dagger,zero_copy,p2p=1

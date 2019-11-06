@@ -1,0 +1,6 @@
+Setting CUDA device
+Setting CUDA device to 3
+QDP m0,n0@circe-n094 info:  trying to get device 3
+QDP m0,n0@circe-n094 info:  trying to grab pre-existing context
+QDP m0,n0@circe-n094 info:  trying to create a context
+Initializing QMP part
